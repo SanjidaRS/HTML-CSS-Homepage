@@ -1,0 +1,279 @@
+/* Remove default margin and padding from all elements */
+*{
+    margin: 0;
+    padding:0;
+}
+
+.main {
+    width:100%;
+    /* Background with a linear gradient and an image */
+    background: linear-gradient(to top, rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%), url(pix.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;  /* Height set to 109% of the viewport height */
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;  /* Center the navbar horizontally */
+}
+
+.icon{
+    width: 200px;
+    float: left;  /* Float to the left to position the logo */
+    height: 70px;
+}
+
+.logo{
+    color: lightblue;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;   /* Float to the left within the icon container */
+    padding-top: 10px;   /* Position the text vertically */
+}
+
+.menu{
+    width: 400px;
+    float: left;  /* Float to the left to position the menu next to the logo */
+    height: 70px;
+}
+
+ul{
+    float: left;  /* Float the list to the left to align with the logo and menu container */
+    display: flex;  /* Use flexbox for alignment */
+    justify-content: center;  /* Center the list items horizontally within the ul */
+    align-items: center;  /* Center the list items vertically within the ul */
+}
+
+ul li{
+    list-style: none;  /* Remove default list item bullets */
+    margin-left: 62px;   /* Add spacing between list items */
+    margin-top: 27px;   /* Add top margin to align vertically */
+    font-size: 14px;   /* Set the font size for list items */
+}
+
+/* Anchor tag styling within list items */
+ul li a{
+    text-decoration: none;  /* Remove underline from links */
+    color: white;         /* Set text color to white */
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;  /* Add a smooth transition effect for hover states */
+}
+
+/* Hover effect for anchor tags in list items */
+ul li a:hover {
+    color: palevioletred;   /* Change text color to orange on hover */
+}
+
+
+.search{
+    width: 330px;   /* Set the width of the search container */
+    float: left;  /* Float the container to the left */
+    margin-left: 270px;  /* Add left margin to position the search bar */
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;  /* Add a border with orange color */
+    margin-top: 13px;   /* Add top margin */
+    color: white;      /* Set text color to white */
+    border-right: none;  /* Remove the right border */
+    font-size: 16px;
+    float: left;
+    padding: 10px;   /* Add padding inside the input field */
+    border-bottom-left-radius: 5px;  /* Rounded corners at the bottom-left */
+    border-top-left-radius: 5px;     /* Rounded corners at the top-left */
+    outline: none;  /* Remove the outline when the input is focused */
+}
+
+/* Search button styling */
+.btn{
+    width: 100px;
+    height: 40px;
+    background: black;
+    border: 2px solid lightskyblue;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;  /* Rounded corners at the bottom-right */
+}
+
+/* Remove focus outline from the button */
+.btn:focus{
+    outline: none;  /* Remove the outline when the button is focused */
+}
+
+.srch{
+    outline: none;   /* Remove the default focus outline */
+}
+
+.content{
+    width: 1200px;
+    height: auto;  /* Allow the height to adjust based on the content */
+    margin: auto;
+    color: white;
+    position: relative;  /* Position relative for potential absolute positioning of inner elements */
+    display: flex;
+    flex-direction: column;
+} 
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;  /* Set line height for better readability */
+}
+
+.content .h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 0%;   /* Add top margin to create space above the header */
+    padding: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: plum;
+    border: none;
+    margin-bottom: 10px;  /* Add bottom margin */
+    margin-left: 20px;    /* Add left margin */
+    font-size: 18px;
+    border-radius: 10px;   /* Add border-radius for rounded corners */
+    cursor: pointer;       /* Set cursor to pointer */
+    transition: .4s ease;  /* Add transition effect */
+}
+
+/* Styling for the anchor tag inside the button */
+.content .cn a{
+    text-decoration: none;   /* Remove underline */
+    color: black;          /* Set text color */
+    transition: .3s ease;    /* Add transition effect */
+}
+
+/* Hover effect for the button */
+.cn:hover{
+    background-color: palevioletred;  /* Change background color on hover */
+}
+
+.content span{
+    color: plum;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;  /* Position absolute for absolute positioning */
+    top: 75px;          /* Position the form slightly above its normal position */
+    left: 870px;         /* Position the form to the right */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    padding: 25px;
+}
+
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;         /* Align the text to the center */
+    color: black;
+    font-size: 22px;
+    background-color: palevioletred;
+    border-radius: 10px;        /* Add border-radius for rounded corners */
+    margin: 2px;
+    padding: 8px;
+}
+
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid plum;  /* Add a bottom border with orange color */
+    border-top: none;     /* Remove top border */
+    border-right: none;   /* Remove right border */
+    border-left: none;    /* Remove left border */
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+
+.form input:focus{
+    outline: none;  /* Remove outline when input is focused */
+}
+
+::placeholder{
+    color: white;      /* Set placeholder text color to white */
+    font-family: Arial;  /* Set placeholder font family */
+}
+
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: plum;
+    border: none;          /* Remove button border */
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;       /* Set cursor to pointer */
+    color: white;
+}
+
+.btnn:hover{
+    background: white;   /* Change background color on hover */
+    color: purple;      /* Change text color on hover */
+}  
+
+.btnn a{
+    text-decoration: none;    /* Remove underline from anchor tag */
+    color: black;
+    font-weight: bold;        /* Set font weight to bold */
+}
+
+.form .link{
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;  /* Center align text */
+}
+
+.form .link a{
+    text-decoration: none;   /* Remove underline from anchor tag */
+    color: palevioletred;        /* Set text color to orange */
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;   /* Remove underline from anchor tag */
+    color: white;
+}
+
+.icons ion-icon{
+    color: plum;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;    /* Add transition effect */
+}
+
+.icons ion-icon:hover{
+    color: palevioletred;         /* Change icon color on hover */
+}
